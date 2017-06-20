@@ -5,10 +5,6 @@
 		hasScrolled = false,
 		scrollingElement = document.scrollingElement || document.documentElement || document.body;
 
-	if (!$.browser.chrome && !$.browser.safari) {
-		scrollTopElement = 'body, html';
-	}
-
 	var lastRun = Date.now(),
 		viewportHeight = $(window).height(),
 		scrollTop, position, threshold;
