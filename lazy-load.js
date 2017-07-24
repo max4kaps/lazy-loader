@@ -22,7 +22,7 @@
 				continue;
 			}
 			threshold = position.threshold ? position.threshold : 0;
-			if (position.top - threshold < scrollTop + viewportHeight && position.top - threshold > scrollTop) {
+			if (position.top - threshold < scrollTop + viewportHeight && position.top - threshold >= scrollTop) {
 				lazyLoad[position.run]();
 				position.loaded = true;
 			}
